@@ -1,0 +1,9 @@
+type Card = 
+ record {
+   suit: text;
+   value: text;
+ };
+service : {
+  getCards: () -> (vec Card) query;
+  shuffleCards: () -> ();
+}
